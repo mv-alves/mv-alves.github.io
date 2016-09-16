@@ -1,0 +1,208 @@
+@import "fonts/fonts.css";
+
+/*! HTML5 Boilerplate v4.3.0 - INICIO */
+html,button,input,select,textarea{color:#222}html{font-size:1em;line-height:1.4}::-moz-selection,::selection{background:#b3d4fc;text-shadow:none}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}audio,canvas,img,video{vertical-align:middle}fieldset{border:0;margin:0;padding:0}textarea{resize:vertical}
+
+
+
+/* ==========================================================================
+   Site
+   ========================================================================== */
+
+body { font: 100% Panton, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 1.3em; color: #fff; background: #7BC3F5; }
+
+a { color: inherit; outline: none !important; text-decoration: none; }
+a:hover { color: inherit; text-decoration: none; }
+a:active,
+a:focus { color: inherit; text-decoration: none; }
+a, button, input { outline: none !important; }
+
+ul, li { display: block; list-style: none; margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; display: block; font-weight: normal; }
+p { margin: 0 0 20px 0; }
+p:last-child { margin-bottom: 0; }
+
+/* *, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } /* usar se não incluir o bootstrap */
+
+.container { position: relative; }
+
+.form-group { margin: 0 0 10px 0; }
+.form-control { border: solid 1px #ccc; padding: 5px 10px; line-height: 20px; font-size: 15px; width: 100%; }
+textarea.form-control { resize: none; }
+
+
+#wrapper { position: relative; width: 100%; max-width: 1920px; margin: auto; overflow: hidden; padding-top: 106px; }
+
+
+
+
+.conteudo { display: table; width: 100%; }
+.conteudo .coluna { display: table-cell; vertical-align: middle; padding: 30px 0; }
+
+.teste { display: inline-block; background: #1FCB9D; width: 100%; max-width: 200px; line-height: 45px; white-space: nowrap; padding: 0 10px; border-radius: 5px; text-transform: uppercase; color: #fff; box-shadow: 1px 1px 3px rgba(0,0,0,0.4); text-align: center; font-size: 18px; font-weight: bold; transition: all 0.4s; }
+.teste:hover { background: #45E2B7; }
+
+
+#header { position: fixed; width: 100%; height: 106px; top: 0; left: 0; z-index: 500; box-shadow: 0 0 5px rgba(0,0,0,0.6); background: #3FA3FF; }
+#header .container { height: inherit; }
+#header .conteudo { height: inherit !important; }
+#header .conteudo .coluna { width: 50% !important; padding: 0 !important; }
+#header .conteudo .coluna2 { text-align: right; }
+#header .teste { visibility: hidden; opacity: 0; }
+.mostra-botao-header #header .teste { visibility: visible; opacity: 1; }
+
+
+.main { position: relative; width: 100%; }
+.main .container { min-height: inherit; }
+
+.main h1 { font-weight: bold; font-size: 48px; line-height: 1.15em; margin: 0 0 0.4em 0; }
+.main h2 { font-weight: bold; font-size: 36px; line-height: 1.2em; margin: 0 0 0.5em 0; }
+.main h3 { font-weight: normal; font-size: 24px; line-height: 1.2em; margin: 0 0 2.58em 0; }
+.main p { font-weight: normal; font-size: 21px; line-height: 1.2em; }
+
+.iphone { position: relative; display: inline-block; }
+.iphone .frame { position: relative; z-index: 1; display: block; width: 100%; }
+
+.descer { position: absolute; z-index: 300; left: 0; bottom: 15px; width: 100%; text-align: center; }
+.descer a { display: inline-block; width: 50px; height: 50px; border-radius: 33px; background: url(../img/seta_baixo.png) center center no-repeat #3FA3FF; box-shadow: 1px 1px 3px rgba(0,0,0,0.4); text-align: left; text-indent: -9999px; }
+.descer a:hover { background-color: #55AEFF; }
+
+#upper { background: url(../img/upper_bg.jpg) center center no-repeat fixed; background-size: cover; }
+#upper .conteudo .coluna { padding-bottom: 65px; }
+#upper .conteudo .coluna1 { width: 50%; text-align: center; }
+#upper .conteudo .coluna2 { width: 50%; text-align: right; padding-right: 75px; }
+#upper .conteudo .coluna2 .iphone { width: 336px; }
+#upper .conteudo .coluna2 .iphone .frame { }
+#upper .conteudo .coluna2 .iphone .balao { position: absolute; z-index: 10; right: -74px; top: 60px; }
+
+
+
+#middle { }
+#middle .coluna { padding-bottom: 60px; }
+#middle h1 { margin: 0 auto 2.29em auto; max-width: 750px; text-align: center; }
+#middle .motivos { display: table; }
+#middle .motivos .motivo { display: table-cell; vertical-align: top; text-align: center; padding: 0 25px; width: 33.3%; }
+#middle .motivos .motivo1 { padding: 0 50px 0 0; }
+#middle .motivos .motivo3 { padding: 0 0 0 50px; }
+#middle .motivos .motivo .img { display: block; text-align: center; margin: 0 0 30px 0; }
+#middle .motivos .motivo .img img { display: inline-block; }
+#middle .descer a { background: url(../img/seta_baixo2.png) center center no-repeat #fff; }
+
+
+
+#bottom { }
+#bottom h1 { position: absolute; left: 0; top: 30px; text-align: center; padding: 0 15px; width: 100%; z-index: 300; }
+#bottom .coluna { padding-top: 140px; }
+#bottom .coluna1 { width: 10%; padding-right: 20px; }
+#bottom .iphone { width: 312px; }
+#bottom .coluna2 { text-align: center; }
+#bottom .coluna2 .inner { display: inline-block; max-width: 455px; }
+#bottom .img { margin: 0 0 20px 0; }
+#bottom .img img { display: inline-block; max-width: 100%; }
+#bottom p { margin-bottom: 2.35em; }
+#bottom .slides { width: 100%; }
+#bottom .slides .slide { width: 100%; }
+#bottom .slides .slide .pager { }
+#bottom .slides .slide .pager a { display: inline-block; border: solid 2px transparent; border-radius: 20px; margin: 0 7px; line-height: 0; }
+#bottom .slides .slide .pager a div { display: inline-block; border: solid 2px #fff; border-radius: 10px; }
+#bottom .slides .slide .pager a div span { display: inline-block; width: 10px; height: 10px; border-radius: 5px; overflow: hidden; overflow: hidden; text-indent: -9999px; }
+#bottom .slides .slide .pager a.cycle-pager-active { border-color: #fff; }
+#bottom .slides .slide .pager a.cycle-pager-active div { border-color: transparent; }
+#bottom .slides .slide .pager a.cycle-pager-active div span { background: #fff; }
+
+#bottom1 { background: #D9C915; }
+#bottom1 .coluna2 .inner { max-width: 360px; }
+#bottom2 { background: #FF3367; }
+#bottom3 { background: #1FCB9D; }
+
+
+
+#footer { }
+
+
+
+#loading { position: fixed; left: 0; top: 0; z-index: 5000; width: 100%; height: 100%; width: 100vw; height: 100vh; background: url(../img/loading.gif) center center no-repeat rgba(255,255,255,0.95); }
+
+
+
+/* ==========================================================================
+   Resposivo
+   ========================================================================== */
+
+/* 1060px+ */
+@media (min-width: 1060px) {
+	#upper .conteudo .coluna { padding-bottom: 75px; }
+	#upper .conteudo .coluna1 .teste { max-width: 250px; line-height: 50px; }
+	#upper .descer a { width: 66px; height: 66px; }
+}
+
+
+/* até 1059px */
+@media (max-width: 1059px) {
+	#wrapper { padding-top: 100px; }
+	#header { height: 100px; }
+	.main h1 { font-size: 46px; }
+	.main h2 { font-size: 34px; }
+	.main h3 { font-size: 22px; }
+	.main p { font-size: 19px; }
+	#upper .conteudo .coluna2 .iphone { width: 320px; }
+	#bottom .iphone { width: 290px; }
+}
+
+/* até 991px */
+@media (max-width: 991px) {
+	#wrapper { padding-top: 90px; }
+	#header { height: 90px; }
+	.main h1 { font-size: 40px; }
+	.main h2 { font-size: 30px; }
+	.main h3 { font-size: 20px; }
+	.main p { font-size: 16px; }
+	#upper .conteudo .coluna2 { padding-right: 50px; padding-left: 30px; }
+	#upper .conteudo .coluna2 .iphone { width: 280px; }
+	#upper .conteudo .coluna2 .iphone .balao { width: 130px; right: -60px; top: 50px; }
+	#middle .motivos .motivo { padding: 0 15px; }
+	#middle .motivos .motivo1 { padding-right: 30px; }
+	#middle .motivos .motivo2 { padding-left: 30px; }
+	#middle .motivos .motivo .img img { height: 150px; }
+	#bottom .iphone { width: 250px; }
+}
+
+/* até 767px */
+@media (max-width: 767px) {
+	#wrapper { padding-top: 70px; }
+	#header { height: 70px; }
+	#header .teste { font-size: 15px; line-height: 38px; max-width: 140px; }
+	#logo img { height: 45px; }
+	.descer a { width: 40px; height: 40px; }
+	.main h1 { font-size: 34px; }
+	.main h2 { font-size: 26px; }
+	.main h3 { font-size: 18px; }
+	.main p { font-size: 15px; }
+	#upper .conteudo .coluna { display: block; width: 100%; text-align: center !important; }
+	#upper .conteudo .coluna2 { padding-left: 50px; padding-right: 50px; }
+	#middle .motivos .motivo { display: block; padding: 0 !important; margin-bottom: 25px; width: 100%; }
+	#bottom .coluna { width: 100%; padding-left: 0 !important; padding-right: 0 !important; display: block; text-align: center; }
+	#bottom .coluna2 { padding-top: 0; }
+}
+
+/* até 420px */
+@media (max-width: 450px) {
+	#wrapper { padding-top: 60px; }
+	#header { height: 60px; }
+	#logo { padding-right: 15px; }
+	#logo img { height: 40px; }
+	.main h1 { font-size: 32px; }
+	.main h2 { font-size: 24px; }
+	#upper .conteudo .coluna2 { padding-left: 20px; padding-right: 20px; }
+	#upper .conteudo .coluna2 .iphone { width: 100%; }
+	#upper .conteudo .coluna2 .iphone .balao { right: -20px; width: 30%; }
+	#bottom .coluna1 { padding-top: 160px; }
+}
+
+
+
+
+
+
+/*! HTML5 Boilerplate v4.3.0 - FINAL */
+.ir{background-color:transparent;border:0;overflow:hidden;*text-indent:-9999px}.ir:before{content:"";display:block;width:0;height:150%}.hidden{display:none!important;visibility:hidden}.visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.invisible{visibility:hidden}.clearfix:before,.clearfix:after{content:" ";display:table}.clearfix:after{clear:both}.clearfix{*zoom:1}@media print{*{background:transparent!important;color:#000!important;box-shadow:none!important;text-shadow:none!important}a,a:visited{text-decoration:underline}a[href]:after{content:" (" attr(href) ")"}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100%!important}@page{margin:.5cm}p,h2,h3{orphans:3;widows:3}h2,h3{page-break-after:avoid}}
