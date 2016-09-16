@@ -16,10 +16,10 @@
         <script src="js/vendor/modernizr.min.js"></script>
     </head>
     
-    <body>
+    <body class="">
     	<div id="wrapper">
             
-            <div id="loading"></div>
+            <!--<div id="loading"></div>-->
             
             <header id="header">
             	<div class="container">
@@ -97,13 +97,14 @@
                 
                 <div class="slides cycle-slideshow"
                     data-cycle-fx="fade"
-                    data-cycle-timeout="0"
+                    data-cycle-timeout="7000"
                     data-cycle-speed="600"
                     data-cycle-slides="> .slide"
                     data-cycle-pager="#bottom .pager"
                     data-cycle-pager-template="<a href=#><div><span>{{slideNum}}</span></div></a>"
                     data-cycle-swipe="true"
                     data-cycle-swipe-fx="scrollHorz"
+                    data-cycle-paused="true"
                 >
                 
                 	<div class="slide" id="bottom1">
@@ -163,14 +164,6 @@
                 </div><!-- end .slides -->
                 
             </section><!-- end #bottom -->
-            
-            
-            <footer id="footer">
-            	<div class="container">
-                	
-                    
-                </div><!-- end .container -->
-            </footer><!-- end #footer -->
             
             
         </div><!-- end #wrapper -->

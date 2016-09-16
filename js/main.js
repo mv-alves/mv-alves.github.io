@@ -35,15 +35,42 @@ $(window).on("load resize",function(){
 	console.log(wh+' '+hh+' '+minh);
 	$(".main").css("min-height",minh);
 	$(".main .conteudo").css("height",minh);
+	if (!$("body").hasClass('header-sempre-colorido')) {
+		$("#upper").css("min-height",wh);
+		$("#upper .conteudo").css("height",wh);
+	}
 	
 });
 
+var slider_iniciado = false;
 
-//scroll (botao header)
+//scroll
 $(window).on("load scroll",function(){
 	
 	var st = $(window).scrollTop();
+	
+	//botao header
 	var ponto = $("#upper").outerHeight();
-	if (st>ponto) $("body").addClass("mostra-botao-header"); else $("body").removeClass("mostra-botao-header");
+	if (st>ponto) $("body").addClass("header-scroll"); else $("body").removeClass("header-scroll");
+	
+	//cycle
+	if (!slider_iniciado) {
+		var slider_ponto = $("#bottom").offset().top - $("#bottom").outerHeight() + 250;
+		console.log(st +' ' +slider_ponto);
+		if (st>slider_ponto) {
+			$("#bottom .slides").cycle('resume');
+			//var html = $("#bottom1 .iphone").html();
+			//$("#bottom1 .iphone").html("");
+			//$("#bottom1 .iphone").html(html);
+			var src = $("#bottom1 .iphone .frame").attr("src");
+			$("#bottom1 .iphone .frame").attr("src",src);
+			$("#bottom .slides").on("cycle-before",function(event, optionHash, outgoingSlideEl, incomingSlideEl, forwardFlag){
+				var $frame = $(incomingSlideEl).find(".iphone .frame");
+				var src = $frame.attr("src");
+				$frame.attr("src",src);
+			});
+			slider_iniciado = true;
+		}
+	}
 	
 });
