@@ -177,11 +177,11 @@ textarea.form-control { resize: none; }
 	#header .teste { font-size: 15px; line-height: 38px; max-width: 140px; }
 	#logo img { height: 45px; }
 	.descer a { width: 40px; height: 40px; }
-	.main h1 { font-size: 34px; }
+	.main h1 { font-size: 34px; margin-top: 65px; }
 	.main h2 { font-size: 26px; }
 	.main h3 { font-size: 18px; }
 	.main p { font-size: 15px; }
-	#upper .conteudo .coluna { display: block; width: 100%; text-align: center !important; }
+	#upper .conteudo .coluna { display: block; width: 100%; text-align: center !important;  }
 	#upper .conteudo .coluna2 { padding-left: 50px; padding-right: 50px; }
 	#middle .motivos .motivo { display: block; padding: 0 !important; margin-bottom: 25px; width: 100%; }
 	#bottom .coluna { width: 100%; padding-left: 0 !important; padding-right: 0 !important; display: block; text-align: center; }
