@@ -32,7 +32,6 @@ $(window).on("load resize",function(){
 	var wh = $(window).height();
 	var hh = $("#header").outerHeight();
 	var minh = wh - hh;
-	console.log(wh+' '+hh+' '+minh);
 	$(".main").css("min-height",minh);
 	$(".main .conteudo").css("height",minh);
 	if (!$("body").hasClass('header-sempre-colorido')) {
