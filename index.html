@@ -14,11 +14,10 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
         <script src="js/vendor/modernizr.min.js"></script>
     </head>
     
-    <body class="">
+    <body class="home">
     	<div id="wrapper">
             
             <!--<div id="loading"></div>-->
@@ -26,25 +25,32 @@
             <header id="header">
             	<div class="container">
                 	<div class="conteudo">
-                    	<div class="coluna coluna1">
-		                    <div id="logo"><a href="#"><img src="img/logo.png" alt="facebot :]"></a></div>
-                        </div><!-- end .coluna -->
-                    	<div class="coluna coluna2">
-		                    <a href="#contact" class="teste"><span class="hidden-xs">Fale conosco</span><span class="visible-xs-inline">Fale conosco</span></a>
-                        </div><!-- end .coluna -->
+                    	<div id="menu-mobile"></div>
+                        <div id="logo"><a href="#" class="goto" data-goto="#wrapper"><img src="img/logo.png" id="logo1"alt="facebot :]"><img src="img/logo_sub.png" id="logo2"alt="para messenger"></a></div>
+                        <nav id="menu">
+                        	<ul>
+                            	<li><a href="#" class="menu1 goto" data-goto="#pq">Plataforma</a></li>
+                            	<li><a href="#" class="menu2 goto" data-goto="#dif">Diferenciais</a></li>
+                            	<li><a href="#" class="menu3 goto" data-goto="#bottom">Facebot</a></li>
+                            	<li><a href="#" class="menu4 goto" data-goto="#cases">Cases</a></li>
+                            	<li><a href="#" class="menu5 goto" data-goto="#sobre">Sobre nós</a></li>
+                            	<li class="fale"><a href="#" class="abrir-fale">Fale conosco</a></li>
+                            </ul>
+                        </nav>
+                        <div class="fale" id="fale-mobile"><a href="#" class="abrir-fale"><span class="hidden-xs">Fale conosco</span><span class="visible-xs-inline-block envelope">&nbsp;</span></a></div>
                     </div><!-- end .conteudo -->
                 </div><!-- end .container -->
             </header><!-- end #header -->
             
             
-            <section class="main" id="upper">
+            <section class="main altura-auto" id="upper">
             	<div class="container">
                 	
                     <div class="conteudo">
                     	<div class="coluna coluna1">
-                        	<h1>Uma nova forma<br>de dialogar</h1>
-                            <h3>Ofereça uma experiência de diálogo para seus públicos: a melhor maneira de converter visitantes em leads com uma plataforma de chat automática.</h3>
-		                    <a href="#contact" class="teste">Fale conosco</a>
+                        	<h1>Nós fazemos chatbots para alavancar o seu negócio</h1>
+                            <h3>Faça vendas, atenda seu público e engaje seus clientes direto do facebook messenger</h3>
+                            <center><a href="#" class="teste abrir-fale">Quero um chatbot</a></center>
                         </div><!-- end .coluna -->
                     	<div class="coluna coluna2">
                             <div class="iphone">
@@ -55,47 +61,97 @@
                     </div><!-- end .conteudo -->
                     
                 </div><!-- end .container -->
-                <div class="descer"><a href="#middle">Descer</a></div>
+                <div class="footer">
+	            	<div class="container">
+                		<div class="conteudo">
+                            <div class="coluna coluna1">
+                                <p>*Facebook messenger, uma plataforma com 99 Milhões de usuários ativos no Brasil.</p>
+                            </div>
+                            <div class="coluna coluna2"></div>
+                        </div>
+	                </div><!-- end .container -->
+                </div>
             </section><!-- end #upper -->
             
             
-            <section class="main" id="middle">
+            <section class="main altura-auto" id="pq" data-menu="1">
+            	<div class="container">
+                	
+                    <div class="conteudo">
+                        <h1>Mas por que o Facebook Messenger ?</h1>
+                    	<div class="coluna coluna1">
+                        	<div class="pq pq1">
+                            	<img src="img/pq1.png">
+                                <p>Cerca de 66% dos brasileiros se comunicam com empresas via sms ou aplicativos.</p>
+                            </div>
+                        	<div class="pq pq2">
+                            	<img src="img/pq2.png">
+                                <p>As pessoas estão utilizando mais serviços de mensagem do que redes sociais</p>
+                            </div>
+                        </div><!-- end .coluna -->
+                    	<div class="coluna coluna2">
+                        	<div class="pq pq3">
+                            	<img src="img/pq3.png">
+                                <p>O seu cliente está no facebook, a plataforma contabilizou *99 Milhões de usuários ativos no Brasil.<br><small>*Dados de Ime Archbong , Campus Party 2016</small></p>
+                            </div>
+                        	<div class="pq pq4">
+                            	<img src="img/pq4.png">
+                                <p>Não precisa de download, a ferramenta trabalha integrada no Facebook</p>
+                            </div>
+                        </div><!-- end .coluna -->
+                        <div id="pq-mao"><img src="img/pq.png"></div>
+                    </div><!-- end .conteudo -->
+                    
+                </div><!-- end .container -->
+            </section><!-- end #middle -->
+            
+            
+            <section class="main altura-auto" id="dif" data-menu="2">
             	<div class="container">
                 	
                     <div class="conteudo">
                     	<div class="coluna coluna1">
                         
-		                    <h1>Por que essa é uma grande oportunidade?</h1>
+		                    <h1>Conheça os diferenciais do nosso produto</h1>
                 			
-                            <div class="motivos">
-                                <div class="motivo motivo1">
-                                    <div class="img"><img src="img/middle1.png"></div>
-                                    <h2>Alta penetração</h2>
-                                    <p>As pessoas estão usando mais aplicativos de troca de mensagens do que sites e apps de redes sociais.</p>
-                                </div><!-- end .motivo -->
-                                <div class="motivo motivo2">
-                                    <div class="img"><img src="img/middle2.png"></div>
-                                    <h2>Mais negócios</h2>
-                                    <p>Se você tem negócio online você precisa estar onde os clientes estão.</p>
-                                </div><!-- end .motivo -->
-                                <div class="motivo motivo3">
-                                    <div class="img"><img src="img/middle3.png"></div>
-                                    <h2>Automatizado</h2>
-                                    <p>Nossos robôs trabalham enquanto você cuida do seu negócio.</p>
-                                </div><!-- end .motivo -->
-                            </div><!-- end .motivos -->
+                            <ul>
+                            	<li>
+                                	<div class="img"><img src="img/dif1.png"></div>
+                                    <h3>Sem  infraestrutura adicional</h3>
+                                    <p>A plataforma esta na cloud e você não precisa de hardware adicional ou servidor para começar a utilizar o facebot </p>
+                                </li>
+                            	<li>
+                                	<div class="img"><img src="img/dif2.png"></div>
+                                    <h3>Fluxos personalizados</h3>
+                                    <p>Conduza seu cliente em uma experiência única projetada para o seu negócio</p>
+                                </li>
+                            	<li>
+                                	<div class="img"><img src="img/dif3.png"></div>
+                                    <h3>Integrações sob demanda</h3>
+                                    <p>Integramos a nossa solução em suas APIs ou outras plataformas de gestão utilizadas pela sua empresa</p>
+                                </li>
+                            	<li>
+                                	<div class="img"><img src="img/dif4.png"></div>
+                                    <h3>Dashboard  com métricas de utilização do chatbot</h3>
+                                    <p>Obtenha informaçoes cruciais para o seu negócio através das interações do bot com seu cliente</p>
+                                </li>
+                            	<li>
+                                	<div class="img"><img src="img/dif5.png"></div>
+                                    <h3>Aprendizagem de processamento de linguagem natural </h3>
+                                    <p>O chatbot aprende e se comunica de forma mais fluída e natural ao longo do tempo</p>
+                                </li>
+                            </ul>
                             
                         </div><!-- end .coluna -->
                     </div><!-- end .conteudo -->
                     
                 </div><!-- end .container -->
-                <div class="descer"><a href="#bottom">Descer</a></div>
             </section><!-- end #middle -->
             
             
-            <section class="main" id="bottom">
+            <section class="main altura-auto" id="bottom" data-menu="3">
             	
-                <h1>O que você pode fazer com o facebots?</h1>
+                <h1>Veja o que você pode fazer com o facebots</h1>
                 
                 <div class="slides cycle-slideshow"
                     data-cycle-fx="fade"
@@ -109,24 +165,6 @@
                     data-cycle-paused="true"
                 >
                 
-                	<div class="slide" id="bottom1">
-                        <div class="container">
-                            <div class="conteudo">
-                                <div class="coluna coluna1">
-                                	<div class="iphone"><img src="img/iphone_pizza.gif" class="frame"></div>
-                                </div><!-- end .coluna -->
-                                <div class="coluna coluna2">
-                                	<div class="inner">
-                                        <div class="img"><img src="img/bottom1.png"></div>
-                                        <h2>Vender seus produtos</h2>
-                                        <p>Perguntar qual sabor de pizza seu cliente quer e até mesmo seu endereço de entrega são coisas que o Facebot pode fazer por você!</p>
-                                        <div class="pager"></div>
-                                    </div><!-- end .inner -->
-                                </div><!-- end .coluna -->
-                            </div><!-- end .conteudo -->
-                        </div><!-- end .container -->
-                    </div><!-- end .slide -->
-                
                 	<div class="slide" id="bottom2">
                         <div class="container">
                             <div class="conteudo">
@@ -136,8 +174,8 @@
                                 <div class="coluna coluna2">
                                 	<div class="inner">
                                         <div class="img"><img src="img/bottom2.png"></div>
-                                        <h2>Interagir com seus clientes</h2>
-                                        <p>Você pode criar tópicos disponibilizando informações sobre o seu negócio desde o item mais vendido até mesmo os itens promocionais e fazer venda direta do facebot chat!</p>
+                                        <h2>Interaja com seus clientes</h2>
+                                        <p>Você pode estar sempre conectado com seus clientes esclarecendo dúvidas, apresentando produtos ou serviços e realizando vendas direto do messenger</p>
                                         <div class="pager"></div>
                                     </div><!-- end .inner -->
                                 </div><!-- end .coluna -->
@@ -154,8 +192,26 @@
                                 <div class="coluna coluna2">
                                 	<div class="inner">
                                         <div class="img"><img src="img/bottom3.png"></div>
-                                        <h2>Inovar</h2>
-                                        <p>Crie novas possibilidades com o facebot, amplie seu canal de comunicação com seus clientes, faça novas abordagens do seu produto tudo que sua criatividade mandar.</p>
+                                        <h2>Inove sua comunicação</h2>
+                                        <p>Amplie o canal de comunicação com seus clientes, faça novas abordagens do seu produto tudo que sua criatividade mandar.</p>
+                                        <div class="pager"></div>
+                                    </div><!-- end .inner -->
+                                </div><!-- end .coluna -->
+                            </div><!-- end .conteudo -->
+                        </div><!-- end .container -->
+                    </div><!-- end .slide -->
+                
+                	<div class="slide" id="bottom1">
+                        <div class="container">
+                            <div class="conteudo">
+                                <div class="coluna coluna1">
+                                	<div class="iphone"><img src="img/iphone_pizza.gif" class="frame"></div>
+                                </div><!-- end .coluna -->
+                                <div class="coluna coluna2">
+                                	<div class="inner">
+                                        <div class="img"><img src="img/bottom1.png"></div>
+                                        <h2>Venda seus produtos</h2>
+                                        <p>Descubra a preferência do seu público, atualizar o cadastro de seus clientes  são coisas que o Facebot pode fazer por você.</p>
                                         <div class="pager"></div>
                                     </div><!-- end .inner -->
                                 </div><!-- end .coluna -->
@@ -167,39 +223,178 @@
                 
             </section><!-- end #bottom -->
             
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Fale Conosco</h2>
-                        <h3 class="section-subheading text-muted">Dúvidas, críticas e sugestões</h3>
+            
+            <section class="main" id="cases" data-menu="4">
+                <div class="cases">
+                    <div class="slides cycle-slideshow"
+                        data-cycle-fx="fade"
+                        data-cycle-timeout="7000"
+                        data-cycle-speed="600"
+                        data-cycle-slides="> .slide"
+                        data-cycle-pager="#cases .pager"
+                        data-cycle-pager-template="<a href=#><div><span>{{slideNum}}</span></div></a>"
+                        data-cycle-swipe="true"
+                        data-cycle-swipe-fx="scrollHorz"
+                        data-cycle-paused="true"
+                    >
+                        <div class="slide" style="background-image:url(img/case_panvel_bg.jpg);">
+                            <div class="container">
+                                <div class="conteudo">
+                                    <div class="coluna coluna1">
+                                    	<div class="box">
+                                            <h2>Descubra como a Panvel uma das maiores redes de drogaria  inovou junto conosco</h2>
+                                            <a href="case.html" class="teste">Ver case Panvel</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- end .container -->
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <img class="img-responsive img-centered" src="img/contact/email.png" alt="">
-                    <h3 class="text-primary text-center" ><a href="mailto:contato@ubots.com.br">contato@ubots.com.br</a></h3>
-                    <img class="img-responsive img-centered" src="img/contact/telephone.png" alt="">
-                    <h3 class="text-primary text-center" >(51) 9326-3946</h3>
-                </div>
-            </div>
-        </section>
-
+            	<div class="container">
+                	<div class="principal">
+                    	<div class="midia">
+                            <h3>O que a mídia esta falando sobre chatbots:</h3>
+                            <ul>
+                                <li>
+                                    <div class="logo"><img src="img/midia_g1.png"></div>
+                                    <p>“Facebook já tem 11 mil robôs batendo papo no Messenger”</p>
+                                </li>
+                                <li>
+                                    <div class="logo"><img src="img/midia_uol.png"></div>
+                                    <p>“Chatbot da Casa Branca permite mandar mensagens ao presidente Barack Obama”</p>
+                                </li>
+                                <li>
+                                    <div class="logo"><img src="img/midia_cio.png"></div>
+                                    <p>“Como transformar a experiência do cliente com chatbots”</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="parceiros">
+                            <h3>Clientes / Parceiros</h3>
+                            <ul>
+                                <li><a href="#"><img src="img/parceiro_panvel.png"></a></li>
+                                <li><a href="#"><img src="img/parceiro_4all.png"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- end .container -->
+            </section><!-- end #cases -->
+            
+            
+            <section class="main" id="sobre" data-menu="5">
+            	<div class="container">
+                	
+                    <div class="inicio">
+                    	<div class="img"><img src="img/sobre_titulo.png"></div>
+                        <div class="intro">A Ubots foi fundada em maio de 2016 e desde então desenvolveu a plataforma Facebot. Os clientes da plataforma tem acesso a dados analíticos das conversas dos seus clientes no Facebook, um módulo de processamento de linguagem natural, integração com sistemas de back-office, e a infraestrutura e suporte para o funcionamento do chatbot.</div>
+                    </div>
+                    
+                    <ul class="equipe">
+                    	<li>
+                        	<div class="foto"><img src="img/equipe/1.jpg"></div>
+                            <div class="nome">Marcos Alves</div>
+                            <div class="cargo">Cargo / Função</div>
+                        </li>
+                    	<li>
+                        	<div class="foto"><img src="img/equipe/2.jpg"></div>
+                            <div class="nome">Gustavo Silveira</div>
+                            <div class="cargo">Cargo / Função</div>
+                        </li>
+                    	<li>
+                        	<div class="foto"><img src="img/equipe/3.jpg"></div>
+                            <div class="nome">Rafael Souza</div>
+                            <div class="cargo">Cargo / Função</div>
+                        </li>
+                    	<li>
+                        	<div class="foto"><img src="img/equipe/4.jpg"></div>
+                            <div class="nome">Matheus Alagia</div>
+                            <div class="cargo">Cargo / Função</div>
+                        </li>
+                    	<li>
+                        	<div class="foto"><img src="img/equipe/5.jpg"></div>
+                            <div class="nome">Joel Corrêa</div>
+                            <div class="cargo">Cargo / Função</div>
+                        </li>
+                    </ul>
+                    
+                </div><!-- end .container -->
+            </section><!-- end #sobre -->
+            
+            
+            <footer id="footer">
+            	<div class="container">
+            		
+                    <div class="header">
+                    	<div class="logo"><img src="img/footer_logo.png"></div>
+                        <div class="linha"></div>
+                    </div>
+                    
+                    <div class="contatos">
+                    	<div class="fones">(51)&nbsp;99326-3946<br>(51)&nbsp;98403-1196</div>
+                    	<div class="local">Lopo Gonçalves, 554, Cidade Baixa, Porto Alegre/RS</div>
+                    	<div class="mail">contato@ubots.com.br</div>
+                        <div class="social">
+                        	<ul>
+                            	<li>Social:</li>
+                            	<li><a href="#"><img src="img/social_twitter.png"></a></li>
+                            	<li><a href="#"><img src="img/social_facebook.png"></a></li>
+                            	<li><a href="#"><img src="img/social_linkedin.png"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div><!-- end .container -->
+            </footer>
+            
+            
         </div><!-- end #wrapper -->
+        
+        
+        <div id="form">
+            <div class="base"><div class="base">
+	        	<div class="overlay" title="Fechar"></div>
+            	<div class="janela">
+                	<div class="header">
+                    	<div class="logo"><img src="img/form_logo.png"></div>
+                        <div class="x"></div>
+                    </div>
+                    <div class="cont">
+                        <h4>Entre em contato conosco, pelo telefone ou email!</h4>
+                        <form>
+                        	<div class="fg-base">
+                                <div class="form-group">
+                                    <label>Marcos Alves</label>
+                                    <label><b>(51)&nbsp;99326-3946</b></label>
+                                </div>
+                                <div class="form-group">
+                                    <label>Gustavo Silveira</label>
+                                    <label><b>(51)&nbsp;98403-1196</b></label>
+                                </div>
+                                <div class="form-group">
+                                    <label>Email:</label>
+                                    <label><b>contato@ubots.com.br</b></label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div></div>
+        </div>
+        
 
         <script src="js/vendor/jquery.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
-        <script>
+         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
           })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
           ga('create', 'UA-84546203-1', 'auto');
           ga('send', 'pageview');
         </script>
+
     </body>
 </html>
