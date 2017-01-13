@@ -9,14 +9,32 @@
     </head>    
     <body>
         <script>
+            var user = getParameterByName('u');
+            var pass = getParameterByName('p');
+
             require(['converse'], function (converse) {
                 converse.initialize({
-                    bosh_service_url: 'https://bind.conversejs.org', // Please use this connection manager only for testing purposes
-                    i18n: locales.en, // Refer to ./locale/locales.js to see which locales are supported
+                    bosh_service_url: 'https://conversejs.org/http-bind/',
+                    i18n: locales.pt_BR,
                     show_controlbox_by_default: true,
+                    auto_login: true,
+                    jid: user,
+                    password: pass,
                     roster_groups: true
                 });
             });
-        </script>        
+
+            function getParameterByName(name, url) {
+                if (!url) {
+                  url = window.location.href;
+                }
+                name = name.replace(/[\[\]]/g, "\\$&");
+                var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                    results = regex.exec(url);
+                if (!results) return null;
+                if (!results[2]) return '';
+                return decodeURIComponent(results[2].replace(/\+/g, " "));
+            }
+        </script>
     </body>
 </html>
